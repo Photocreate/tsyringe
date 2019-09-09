@@ -25,7 +25,7 @@ export type Registration<T = any> = {
 export const typeInfo = new Map<constructor<any>, any[]>();
 
 /** Dependency Container */
-class InternalDependencyContainer implements DependencyContainer {
+export class InternalDependencyContainer implements DependencyContainer {
   private _registry = new Registry();
 
   public constructor(private parent?: InternalDependencyContainer) {}
